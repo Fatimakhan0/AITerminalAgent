@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Terminal Copilot</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="app-header">
+    <h1>SmartShell: AI Terminal Agent</h1>
+    <p class="tagline">Turn Natural Language into Terminal Power</p>
+</header>
+
+<div class="terminal">
+    <div class="toolbar">
+        <div class="toolbar-left">
+            <button id="clearBtn" class="tool-btn">Clear</button>
+            <button id="themeBtn" class="tool-btn">Theme</button>
+            <button id="micBtn" class="tool-btn">🎤 Speak</button>
+        </div>
+        <div class="toolbar-right">
+            <span id="status" class="status">Ready</span>
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+    <div class="input-line">
+        <span>$</span>
+        <input id="command" autofocus autocomplete="off" spellcheck="false">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
